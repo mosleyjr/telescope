@@ -1,0 +1,10 @@
+<template name="category_title">
+  <div class="category-title post-list-title">
+    {{#with category}}
+      {{#each categoryParents}}
+        <a href="{{this.getUrl}}">{{title}}</a> {{{icon "next"}}}
+      {{/each}}
+      <h2 class="main-category-title">{{title}}</h2>
+    {{/with}}
+  </div>
+</template>
